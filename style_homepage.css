@@ -1,0 +1,157 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+.banner{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(IMAGES/bg4.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.navbar{
+	text-align: center;
+	background: #E4C2C1;
+}
+
+.navbar ul {
+	display: inline-flex;
+	list-style: none;
+}
+
+.navbar ul li {
+	width: 120px;
+	padding: 15px;
+	margin: 15px;
+}
+
+.navbar ul li a{
+	text-decoration: none;
+	color: #B6666F;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.active, .navbar ul li:hover{
+	background: #FEF2F2;
+	border-radius: 3px;
+}
+
+.row{
+	display: flex;
+	height: 88%;
+	align-items: center;
+}
+
+.col{
+	flex-basis: 50%;
+}
+
+.me{
+	height: 160px;
+	vertical-align: left;
+	margin-left: 240px;
+	border-radius: 100px;
+	border: 3px solid white;
+}
+
+h1{
+	color: #fff;
+	font-size: 100px;
+	margin-left: 30px;
+}
+
+p{
+	color: #fff;
+	font-size: 15px;
+	line-height: 20px;
+	margin-left: 40px;
+	text-align: justify;
+	
+}
+
+button{
+	width: 180px;
+	font-size: 12px;
+	padding: 12px 0;
+	text-align: center;
+	margin-top: 30px;
+	border-radius: 20px;
+	font-weight: bold;
+	background: white;
+	outline: none;
+	border: 0;
+	color: black;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+
+span{
+	background: #009688;
+	height: 100%;
+	width: 0;
+	border-radius: 25px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: -1;	
+	transition: 0.5s;
+}
+
+button:hover span{
+	width: 100%;
+}
+
+button:hover{
+	border: none;
+}
+
+.card{
+	text-decoration: none;
+	width: 200px;
+	height: 230px;
+	display: inline-block;
+	border-radius: 10px;
+	padding: 15px 25px;
+	box-sizing: border-box;
+	cursor: pointer;
+	margin: 10px 15px;
+	background-position: center;
+	background-size: cover;
+	transition: transform 0.5s;
+}
+
+.card1{
+	background-image: url(IMAGES/aboutme.png);
+}
+
+.card2{
+	background-image: url(IMAGES/resume.png);
+}
+
+.card3{
+	background-image: url(IMAGES/beats.png);
+}
+
+.card4{
+	background-image: url(IMAGES/film.png);
+}
+
+.card:hover{
+	transform: translateY(-10px);
+}
+
+h5{
+	color: #fff;
+	text-shadow: 0 0 5px #999;
+}
+
+.card p{
+	text-shadow: 0 0 15px #000;
+	font-size: 12px;
+}
